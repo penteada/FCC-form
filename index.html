@@ -47,7 +47,7 @@
                 </div>
                 <div class="contacts">
                         <label for="email" id="email-label">What is your email address?</label><br>
-                        <input type="email" id="email" class="no-outline"><br>
+                        <input type="email" id="email" class="no-outline"onfocus="removeinput(event, this)" value="email@domain.com"><br>
                         <label for="phone" id="number-label" class="no-outline">What is your phone number?</label><br>
                         <input type="tel" name="phone" id="number" class="no-outline" onfocus="removeinput(event, this)"
                         pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" value="8-123-456-7890" required>
