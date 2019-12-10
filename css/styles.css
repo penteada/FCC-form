@@ -1,0 +1,68 @@
+.header {
+    text-align: center;
+}
+
+.header, #survey-form, input [type="value"] {
+    font-family: 'Roboto', sans-serif;
+}
+
+input [type="value"] {
+    font-size: 1em;
+}
+
+#title {
+    font-size: 1.5em;
+    text-shadow: .03em .1em .1em #477CAB;
+}
+
+#title:hover {
+    text-shadow: 0 .1em .02em #477CAB;
+}
+
+#description, #form-name {
+    font-size: 1.2em;
+}
+
+#form-name {
+    font-weight: 800;
+    margin: 1em;
+}
+
+#yes {
+    margin-top: 1em;
+}
+
+#name, .decision, #guests-quantity, .dishes, .diet, #email, #number-label, #number {
+    margin-bottom: 1em;
+}
+
+#submit {
+    background: transparent;
+    border: 1px #577289 solid;
+    border-radius: 4px;
+    padding: .5em;
+    font-size: 1em;
+}
+
+#submit:hover {
+    border: 1px #477CAB solid;
+    box-shadow: -.03em .1em .1em #477CAB;
+}
+
+#submit:active {
+    box-shadow: -.03em .1em .1em #477CAB;
+}
+
+.no-outline:focus {
+    outline: none;
+}
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #fff;
+    padding: 5px;
+}
+

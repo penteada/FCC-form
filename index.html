@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Party invitation</title>
+</head>
+<body>
+    <header class="header">
+        <h1 id="title">FCC: Survey form</h1>
+        <p id="description">Freecodecamp survey form challenge</p>
+    </header>
+    <form id="survey-form">
+        <fieldset id="form-group">
+            <legend id="form-name">Party invite</legend>
+            <label id="name-label" for="name">What is your name?</label><br>
+            <input type="text" name="name" value="Your name" id="name"  onfocus="removeinput(event, this)" class="no-outline">
+                <div class="decision">
+                    Can you attend?<br>
+                    <label for="yes"><input id="yes" type="radio" name="decision" value="yes">Yes,  I'll be there</label><br>
+                    <label for="yes"><input id="maybe" type="radio" name="decision" value="maybe">Not sure, yet</label><br>
+                    <label for="no"><input id="no" type="radio" name="decision" value="no">Sorry, can't make it</label>
+                </div>
+                <div class="guests">
+                    <label for="guests-quantity">How many of you are attending?</label><br>
+                    <input type="number" min="0" max="100" step="1" id="guests-quantity" value="1" class="no-outline">
+                </div>
+                <div class="dishes">
+                        What will you be bringing?<br>
+                        <input type="checkbox" value="Mains"class="no-outline">Mains<br>
+                        <input type="checkbox" value="Salad"class="no-outline">Salad<br>
+                        <input type="checkbox" value="Dessert"class="no-outline">Dessert<br>
+                        <input type="checkbox" value="Drinks"class="no-outline">Drinks<br>
+                        <input type="checkbox" value="Appetizers" class="no-outline">Sides/Appetizers<br>
+                        <input type="checkbox" value="Other"class="no-outline">Other <input type="text" value="name your dish" onfocus="removeinput(event, this)"><br>
+                </div>
+                <div class="diet">
+                    Do you have any allergies or dietary restrictions?<br>
+                    <select name="diet" id="dropdown">
+                        <option value="no" selected>No</option>
+                        <option value="yes">Yes</option>
+                        <option value="dontknow">Don't know</option>
+                    </select>
+                </div>
+                <div class="contacts">
+                        <label for="email" id="email-label">What is your email address?</label><br>
+                        <input type="email" id="email" class="no-outline"><br>
+                        <label for="phone" id="number-label" class="no-outline">What is your phone number?</label><br>
+                        <input type="tel" name="phone" id="number" class="no-outline" onfocus="removeinput(event, this)"
+                        pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" value="8-123-456-7890" required>
+                </div>
+                <div class="submit-btn">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+        </fieldset>
+    </form>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
