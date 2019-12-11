@@ -17,10 +17,10 @@
         <fieldset id="form-group">
             <legend id="form-name">Party invite</legend>
             <label id="name-label" for="name">What is your name?</label><br>
-            <input type="text" name="name" value="Your name" id="name"  onfocus="removeinput(event, this)" class="no-outline">
+            <input type="text" name="name" value="Your name" id="name"  onfocus="removeinput(event, this)" class="no-outline" required>
                 <div class="decision">
                     Can you attend?<br>
-                    <label for="yes"><input id="yes" type="radio" name="decision" value="yes">Yes,  I'll be there</label><br>
+                    <label for="yes"><input id="yes" type="radio" name="decision" value="yes" checked>Yes,  I'll be there</label><br>
                     <label for="yes"><input id="maybe" type="radio" name="decision" value="maybe">Not sure, yet</label><br>
                     <label for="no"><input id="no" type="radio" name="decision" value="no">Sorry, can't make it</label>
                 </div>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="contacts">
                         <label for="email" id="email-label">What is your email address?</label><br>
-                        <input type="email" id="email" class="no-outline"onfocus="removeinput(event, this)" value="email@domain.com"><br>
+                        <input type="email" id="email" class="no-outline"onfocus="removeinput(event, this)" value="email@domain.com" required><br>
                         <label for="phone" id="number-label" class="no-outline">What is your phone number?</label><br>
                         <input type="tel" name="phone" id="number" class="no-outline" onfocus="removeinput(event, this)"
                         pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" value="8-123-456-7890" required>
