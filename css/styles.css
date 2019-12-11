@@ -2,12 +2,21 @@
     text-align: center;
 }
 
-.header, #survey-form, input [type="value"] {
+.header, #survey-form, input {
     font-family: 'Roboto', sans-serif;
+}
+#survey-form {
+    line-height: 1.6em;
 }
 
 input [type="value"] {
     font-size: 1em;
+}
+
+input:focus:required:invalid {
+    background: rgb(214, 211, 211);
+    color: #1f2224;
+    font-weight: 700;
 }
 
 #title {
